@@ -47,6 +47,18 @@
 			<artifactId>spring-data-dynamodb</artifactId>
 			<version>5.1.0</version>
 		</dependency>
+		<dependency>
+    			<groupId>software.amazon.awssdk</groupId>
+   			<artifactId>core</artifactId>
+   			<version>2.24.10</version>
+   			<type>pom</type>
+		</dependency>
+
+		<dependency>
+    			<groupId>com.amazonaws</groupId>
+    			<artifactId>aws-java-sdk-lambda</artifactId>
+    			<version>1.9.22</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
