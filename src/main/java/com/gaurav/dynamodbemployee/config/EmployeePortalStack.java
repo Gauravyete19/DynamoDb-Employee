@@ -25,7 +25,7 @@ public class EmployeePortalStack extends Stack {
         // Lambda function
         Function employeeFunction = Function.Builder.create(this, "EmployeeFunction")
             .runtime(Runtime.JAVA_11)
-            .code(Code.fromAsset("target/employee-function.jar"))
+            .code(Code.fromAsset("target/DynamodbEmployeeApplication.jar"))
             .handler("com.gaurav.dynamodbemployee.config.MyLambdaFunction::handleRequest")
             .environment(Map.of("TABLE_NAME", employeeTable.getTableName()))
             .build();
